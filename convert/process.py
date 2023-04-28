@@ -4,7 +4,7 @@ import librosa
 import soundfile as sf
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Tokenizer ,Wav2Vec2CTCTokenizer,Wav2Vec2Processor
 from pydub import AudioSegment
-from convert.models import Chat
+from convert.models import Convert
 
 # MODEL_ID = "jonatasgrosman/wav2vec2-large-xlsr-53-english"
 # LANG_ID = "en"
@@ -60,7 +60,7 @@ def asr_transcript(tokenizer, model, input_file):
 def file(audio_file_id): 
 
     audio = None
-    audio = Chat.objects.get(id=audio_file_id)                                                                   
+    audio = Convert.objects.get(id=audio_file_id)                                                                   
     src = audio.uploaded_file
     # convert mp3 to wav       
     wav_input = 'audio_file.wav' 

@@ -1,9 +1,9 @@
 from rest_framework import status ,generics 
-from chat.models import Chat
+from convert.models import Convert
 from chat.Api.serializers import ChatSerializers
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from chat import process
+from convert import process
 
 
 
@@ -23,7 +23,7 @@ def apirecord(request):
       serializer.save()
       # pass obj to (speech to text) process
       process.file(serializer.data['id'])
-      samples = Chat.objects.last()
+      samples = Convert.objects.last()
       # return text in response
       serializer = ChatSerializers(samples , many= False)
       return Response(serializer.data) 
