@@ -1,6 +1,7 @@
 # django-speech
 
-in command line
+#  setup project in your command line
+  
 1#    git clone https://github.com/lamiaah/django-speech
 
 2#    cd Django-Speech-to-text-Chat
