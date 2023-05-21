@@ -7,7 +7,9 @@
 2#    cd django-speech
 
 3#    python -m venv   your_env_name
+
  3##    your_env_name\Scripts\activate
+ 
 4#    pip install -r req.txt
 
 5#    got to folder convert -> Api -> views  change  chat to convert 
