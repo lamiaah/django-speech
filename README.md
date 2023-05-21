@@ -4,7 +4,7 @@
   
 1#    git clone https://github.com/lamiaah/django-speech
 
-2#    cd Django-Speech-to-text-Chat
+2#    cd django-speech
 
 3#    python -m venv   your_env_name
  3##    your_env_name\Scripts\activate
